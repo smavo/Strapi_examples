@@ -5,4 +5,13 @@
  * to customize this controller
  */
 
-module.exports = {};
+const { sanitizeEntity } = require('strapi-utils');
+
+module.exports = {
+    async findOneUrl(ct) {
+        const { url } = ct.params;
+        // console.log(url)
+        const entity = await strapi.services.blog.findOne({ url })
+        return sanitizeEntity(entity, { model: strapi.models.blog });
+    }
+};

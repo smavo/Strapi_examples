@@ -11,14 +11,10 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "nombre": {
+    "titulo": {
       "type": "string",
       "required": true,
       "unique": true
-    },
-    "fecha_creacion": {
-      "type": "datetime",
-      "required": true
     },
     "descripcion": {
       "type": "richtext"
@@ -39,6 +35,10 @@
     },
     "agente": {
       "model": "agente"
+    },
+    "url": {
+      "type": "uid",
+      "targetField": "titulo"
     }
   }
 }
