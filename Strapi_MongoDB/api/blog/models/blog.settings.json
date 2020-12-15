@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "blogs",
   "info": {
-    "name": "Blog"
+    "name": "Blog",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -10,11 +11,11 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "Nombre": {
+    "titulo": {
       "type": "string",
       "required": true
     },
-    "Imagen": {
+    "imagen": {
       "collection": "file",
       "via": "related",
       "allowedTypes": [
@@ -25,7 +26,7 @@
       "plugin": "upload",
       "required": false
     },
-    "Descripcion": {
+    "descripcion": {
       "type": "richtext",
       "required": true
     },
@@ -34,6 +35,10 @@
     },
     "agente": {
       "model": "agentes"
+    },
+    "url": {
+      "type": "uid",
+      "targetField": "titulo"
     }
   }
 }

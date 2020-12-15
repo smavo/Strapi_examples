@@ -47,6 +47,14 @@
       "config": {
         "policies": []
       }
+    },
+    {
+      "method": "GET",
+      "path": "/blog/:url",
+      "handler": "blog.findOneUrl",
+      "config": {
+        "policies": []
+      }
     }
   ]
 }
