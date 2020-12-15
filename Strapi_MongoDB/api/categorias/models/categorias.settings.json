@@ -10,7 +10,7 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "Nombre": {
+    "nombre": {
       "type": "string"
     }
   }

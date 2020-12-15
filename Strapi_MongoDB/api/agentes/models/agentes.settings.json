@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "agentes",
   "info": {
-    "name": "Agentes"
+    "name": "Agentes",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -10,15 +11,15 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "Nombres": {
+    "nombres": {
       "type": "string",
       "required": true
     },
-    "Numero": {
+    "numero": {
       "type": "string",
       "required": true
     },
-    "Email": {
+    "email": {
       "type": "email",
       "required": true
     }
